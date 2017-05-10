@@ -1,21 +1,19 @@
 package com.artxak.recipebook;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.*;
+import android.widget.Toast;
 
 public class ListFragment extends Fragment {
 
     public interface OnRecipeSelectedInterface {
-
         void onListRecipeSelected(int recipeIndex);
-
     }
 
     @Nullable
@@ -30,9 +28,7 @@ public class ListFragment extends Fragment {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
-//        RecyclerView.
         return view;
 
-//        return super.onCreateView(inflater, container, savedInstanceState);
     }
 }
